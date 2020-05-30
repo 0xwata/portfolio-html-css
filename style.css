@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/*
+width: 
+position
+background
+
+
+
+
+
+
+*/
+body {
+  font-family: Capriola, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  margin: 0px; }
+  body header {
+    width: 100vw;
+    position: fixed;
+    border-bottom: solid 2px; }
+    body header nav.navigation_bar {
+      display: flex;
+      justify-content: space-between; }
+    body header .navigation_bar__left-content {
+      width: 40vw;
+      margin-left: 5vw; }
+    body header .navigation_bar__right-content {
+      width: 60vw;
+      display: flex;
+      justify-content: center; }
+    body header ul.navigaton_bar__link_items {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      width: 100%; }
+    body header li.navigaton_bar__link_item {
+      display: -webkit-box;
+      /* safari, Chrome */
+      display: -moz-box;
+      /* Firefox */
+      display: -o-box;
+      /* Opera */
+      display: -ms-box;
+      /* IE */
+      display: box;
+      /* ベンダープレフィックスなし */
+      -webkit-box-align: center;
+      /* safari, Chrome */
+      -moz-box-align: center;
+      /* Firefox */
+      -o-box-align: center;
+      /* Opera */
+      -ms-box-align: center;
+      /* IE */
+      box-align: center;
+      /* ベンダープレフィックスなし */
+      width: 20%;
+      height: 100%;
+      position: relative; }
+    body header li a {
+      /*ディスプレイ要素としてミナス*/
+      display: block;
+      text-decoration: none;
+      color: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 10vh; }
+    body header li a:hover {
+      color: white;
+      background: #79c6b6; }
+    body header ul.navigaton_bar__link_items li.navigaton_bar__link_item li {
+      height: 0;
+      overflow: hidden;
+      transition: .5s; }
+    body header ul.navigaton_bar__link_items li.navigaton_bar__link_item:hover > ul > li {
+      height: 2rem;
+      overflow: visible; }
+  body main #top {
+    background: white; }
+    body main #top .top_banner__container {
+      height: 100vh;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      body main #top .top_banner__container .blank-space {
+        height: 10em; }
+      body main #top .top_banner__container .hello {
+        /*対象のテキスト*/
+        margin: auto;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        font-size: 180%;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: translateY(-50%); }
+      body main #top .top_banner__container .anim-typewriter {
+        /*アニメーションセッティング*/
+        animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal; }
+@keyframes typewriter {
+  /*タイプライターライクなアニメーション*/
+  from {
+    width: 0; }
+  to {
+    width: 34em; } }
+@keyframes blinkTextCursor {
+  /*点滅するカーソルのアニメーション*/
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75); }
+  to {
+    border-right-color: transparent; } }
+    body main #top .page_scroll {
+      height: 20vh;
+      text-align: center;
+      animation: fuwafuwa 3s infinite; }
+      body main #top .page_scroll a {
+        padding-top: 60px;
+        text-decoration: none;
+        color: black; }
+        body main #top .page_scroll a img {
+          width: 5em;
+          height: 5em; }
+@keyframes fuwafuwa {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(20px); }
+  100% {
+    transform: translateY 0px; } }
+  body main #profile {
+    background-color: #fcfcfc;
+    background-image: url("assets/dot.png"); }
+    body main #profile .profile_container {
+      height: 100vh;
+      max-width: 100%; }
+      body main #profile .profile_container .profile_headline h2 {
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10vh; }
+      body main #profile .profile_container .profile_about {
+        display: flex;
+        justify-content: center;
+        margin: 0 15em; }
+        body main #profile .profile_container .profile_about .profile_avatar {
+          width: 12em;
+          height: 12em;
+          margin-top: 2em;
+          margin-right: 5em;
+          border-radius: 50%;
+          box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+          background-image: url("./assets/icon_menherachan01_07.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-size: 100% 100%;
+          text-align: center; }
+        body main #profile .profile_container .profile_about .profile_text {
+          width: 30em;
+          height: 30em; }
+          body main #profile .profile_container .profile_about .profile_text .sns_button {
+            height: 100em; }
+            body main #profile .profile_container .profile_about .profile_text .sns_button a {
+              text-decoration: none; }
+              body main #profile .profile_container .profile_about .profile_text .sns_button a img {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-size: 100% 100%;
+                width: 3em;
+                height: 3em; }
+                body main #profile .profile_container .profile_about .profile_text .sns_button a img:hover {
+                  opacity: 0.3; }
+  body main #portfolio {
+    background: white; }
+    body main #portfolio .portfolio_container {
+      height: 100vh;
+      max-width: 100%; }
+      body main #portfolio .portfolio_container h2 {
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10vh; }
+  body main #note {
+    background-color: #fcfcfc;
+    background-image: url("assets/dot.png"); }
+    body main #note .note_container {
+      height: 100vh;
+      max-width: 100%; }
+      body main #note .note_container h2 {
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10vh; }
+  body main #contact {
+    background-color: white; }
+    body main #contact .contact_container {
+      height: 100vh;
+      max-width: 100%; }
+      body main #contact .contact_container h2 {
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10vh; }
+
+/*# sourceMappingURL=style.css.map */
