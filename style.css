@@ -16,7 +16,8 @@ body {
   body header {
     width: 100vw;
     position: fixed;
-    border-bottom: solid 2px; }
+    border-bottom: solid 2px;
+    z-index: 999; }
     body header nav.navigation_bar {
       display: flex;
       justify-content: space-between; }

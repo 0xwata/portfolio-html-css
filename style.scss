@@ -17,6 +17,7 @@ body {
         width: 100vw;
         position: fixed;
         border-bottom: solid 2px;
+        z-index: 999;
         
         nav.navigation_bar{
             display: flex;
@@ -85,7 +86,6 @@ body {
         li a:hover{
             color: white;
             background: #79c6b6;
-
         }
 
         ul.navigaton_bar__link_items li.navigaton_bar__link_item li {
